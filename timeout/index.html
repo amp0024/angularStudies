@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- custom attribute set up here -->
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Timeout</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <style>
+            html, body
+            {
+                font-size: 1.1em;
+            }
+        </style>
+        
+        <!-- load angular via CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+        <script src="./app.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Timeout</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+            <!-- looking for a controller with this name -->
+            <!-- this is the view that is controlled by the app.js file -->
+			<div ng-controller="mainController">
+                <!-- interpolate here -->
+                <h1>Hello {{ name + '. Whats going on?'}}</h1>
+                
+            </div>
+
+		</div>
+
+    </body>
+</html>
